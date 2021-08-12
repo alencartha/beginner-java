@@ -10,18 +10,19 @@ public class Progam {
 
 		Scanner sc = new Scanner(System.in);
 
-		Products products = new Products();
 
 		System.out.println("Enter product data:");
 
 		System.out.print("Name:");
-		products.name = sc.next();
+		String name = sc.next();
 
 		System.out.print("Price:");
-		products.price = sc.nextDouble();
+		double price = sc.nextDouble();
 
 		System.out.print("Quantity:");
-		products.quantity = sc.nextInt();
+		int quantity = sc.nextInt();
+		
+		Products products = new Products(name, price, quantity);
 
 		System.out.println();
 		System.out.println("Product data: " + products.toString());
