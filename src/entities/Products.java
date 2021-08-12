@@ -14,6 +14,13 @@ public class Products {
 		this.price = price;
 		this.quantity = quantity;
 	}
+	
+	//sobrecarga - uma opção para passar apenas dois parâmetros no construtor, o valor padrão de int quantity, é zero
+	
+	public Products(String name, double price) {
+		this.name = name;
+		this.price = price;
+	}
 
 	public double totalValueinStock() {
 		return price * quantity;
