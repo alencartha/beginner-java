@@ -23,6 +23,9 @@ public class Progam {
 		int quantity = sc.nextInt();
 		
 		Products products = new Products(name, price, quantity);
+		
+		products.setName("Computer");
+		System.out.println("Update name: " + products.getName());
 
 		System.out.println();
 		System.out.println("Product data: " + products.toString());

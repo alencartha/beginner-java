@@ -2,9 +2,17 @@ package entities;
 
 public class Products {
 
-	public String name;
-	public double price;
-	public int quantity;
+	private String name;
+	private double price;
+	private int quantity;
+	
+	public String setName(String name) {
+		return this.name = name;
+	}
+	
+	public String getName() {
+		return name;
+	}
 	
 	
 	//Constructor:
